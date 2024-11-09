@@ -10,6 +10,7 @@ const Navbar = () => {
             <li>Skills</li>
             <li>Resume</li>
             <li>Project</li>
+            <li>Blog</li>
             <li>Contact</li>
         </ul>
       </nav>

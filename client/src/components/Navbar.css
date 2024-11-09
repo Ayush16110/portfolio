@@ -3,13 +3,16 @@
     padding: 0;
 }
 
+body{
+    background-color: black
+}
+
 .nav-links {
     display: flex;
     list-style-type: none;
     justify-content: space-between;
     align-items: center;
     width: 85vw;
-    background-color: black;
     height: 10vh;
     margin: auto;
     border-radius: 50px;
@@ -20,19 +23,19 @@
 
 .nav-links li{
     cursor: pointer;
-    padding: 15px;
     font-size: 20px;
     color: white;
     flex-grow: 1;
     text-align: center;
+    transition: all 0.3s ease;
 }
 
 .nav-links li:hover{
-    background-color: #2e2e2e;
-    border-radius: 50px;
+    color: rgba(127, 127, 127, 0.737);
+    transform: scale(1.1);
 }
 
-.nav-links li:nth-child(1){
-    background-color: #fd853a;
-    border-radius: 50px;
-}
+
+/* @media screen (max-width = 768) {
+    
+} */
