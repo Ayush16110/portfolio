@@ -1,41 +1,72 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 
 body{
-    background-color: black
+    background-color: #0A0A0A;
+    color: white;
 }
 
-.nav-links {
+.navbar{
+    display: flex;
+    height: 96px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.home{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px;
+}
+
+.home p{
+    color: #C7C7C7;
+}
+
+.nav-links{
     display: flex;
     list-style-type: none;
     justify-content: space-between;
-    align-items: center;
-    width: 85vw;
-    height: 10vh;
-    margin: auto;
-    border-radius: 50px;
-    padding: 0 5px;
-    gap: 1vw;
-    margin-top: 10px;
+    gap: 50px;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    padding-right: 50px;
 }
 
 .nav-links li{
     cursor: pointer;
-    font-size: 20px;
-    color: white;
-    flex-grow: 1;
-    text-align: center;
-    transition: all 0.3s ease;
+    transition: all 1s ease;
+    color: #C7C7C7;
 }
 
 .nav-links li:hover{
-    color: rgba(127, 127, 127, 0.737);
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 
-/* @media screen (max-width = 768) {
-    
-} */
+@media screen and ( max-width: 800px) {
+    .home{
+        font-size: 22px;
+    }
+
+    .nav-links{
+        font-size: 11px;
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .home{
+        font-size: 16px;
+    }
+    .nav-links{
+        font-size: 8px;
+        gap: 10px;
+    }
+}
